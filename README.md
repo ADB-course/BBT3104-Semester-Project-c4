@@ -3,12 +3,13 @@
 
 | **Key**                                                               | Value                                                                                                                                                                              |
 |---------------|---------------------------------------------------------|
-| **Name of Business Chosen for the Case Study**                                                       | ? |
-| **Industry**                                                       | ? |
-| **Group Name**                                                               | ? |
+| **Name of Business Chosen for the Case Study**                                                       | British American Tobacco Company |
+| **Industry**                                                       | Tobacco Industry |
+| **Group Name**                                                               | C4 |
 | **Semester Duration**                                                 | 19<sup>th</sup> August - 25<sup>th</sup> November 2024                                                                                                                       |
 
 # Cause-and-Effect Diagram
+![WhatsApp Image 2024-09-02 at 11 05 12_c3789eb3](https://github.com/user-attachments/assets/a4fc5762-4a00-4e65-9201-96eed23dd7b3)
 
 
 # Enhanced Entity Relationship Diagram (EERD)
