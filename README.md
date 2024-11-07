@@ -16,6 +16,7 @@
 
 
 # Database Schema
+![image](https://github.com/user-attachments/assets/fc73fe76-005e-4ca9-b0ed-70f31e0277a6)
 
 
 # System Architecture
