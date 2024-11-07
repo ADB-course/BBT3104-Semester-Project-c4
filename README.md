@@ -21,3 +21,4 @@
 
 
 # System Architecture
+![image](https://github.com/user-attachments/assets/c155ea10-7dda-415a-ab91-cf6c238608a8)
