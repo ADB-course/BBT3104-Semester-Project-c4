@@ -13,7 +13,8 @@
 
 
 # Enhanced Entity Relationship Diagram (EERD)
-"C:\Users\kituy\OneDrive - Strathmore University\Pictures\Screenshots\EERD 2 (ADS).png"
+
+<img width="722" alt="EERD 2 (ADS)" src="https://github.com/user-attachments/assets/5e6c342f-8220-4bd7-bddc-84b1b7682bad">
 
 # Database Schema
 ![image](https://github.com/user-attachments/assets/fc73fe76-005e-4ca9-b0ed-70f31e0277a6)
