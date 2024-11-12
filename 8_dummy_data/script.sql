@@ -59,3 +59,19 @@ INSERT INTO payment(payment_code, payment_date, payment_amount, order_id)
 VALUES ('EXTMVR34','10-11-23','20000','300');
 INSERT INTO payment(payment_code, payment_date, payment_amount, order_id) 
 VALUES ('72QMLJHG','10-11-23','98000','301');
+
+-- Table order_product insertion.
+INSERT INTO order_product(order_id, productID, quantity) 
+VALUES ('300','202','10');
+INSERT INTO order_product(order_id, productID, quantity) 
+VALUES ('301','101','20');
+
+-- Table product_regulation insertion.
+INSERT INTO product_regulation(productID, regulation_id, compliance_status, last_checked_date) 
+VALUES ('101','573','Non-Compliant','10-11-23');
+INSERT INTO product_regulation(productID, regulation_id, compliance_status, last_checked_date) 
+VALUES ('102','425', 'Compliant', '10-11-23');
+INSERT INTO product_regulation(productID, regulation_id, compliance_status, last_checked_date) 
+VALUES ('201','674', 'Partially-Compliant','10-11-23');
+INSERT INTO product_regulation(productID, regulation_id, compliance_status, last_checked_date) 
+VALUES ('202','788', 'Compliant', '10-11-23');
