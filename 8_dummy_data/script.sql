@@ -27,8 +27,8 @@ INSERT INTO `traditional_tobacco_product`(`productID`, `tar_content`) VALUES ('2
 INSERT INTO `traditional_tobacco_product`(`productID`, `tar_content`) VALUES ('202','6');
 
 -- Table Regulations insertion.
-INSERT INTO `regulation`(`regulation_id`, `regulation_name`, `compliant__status` ) VALUES ('573', 'General Data Protection Regulation', 'Non-Compliant');
-INSERT INTO `regulation`(`regulation_id`, `regulation_name`, `compliant__status` ) VALUES('425', 'International Organization for Standardization Standard 9001:2015', 'Compliant');
-INSERT INTO `regulation`(`regulation_id`, `regulation_name`, `compliant__status` ) VALUES('674', 'Health Insurance Portability and Accountability Act', 'Partially-Compliant ');
-INSERT INTO `regulation`(`regulation_id`, `regulation_name`, `compliant__status` ) VALUES('788', 'Health Warnings on Cigarette Packets', 'Complaint');
+INSERT INTO `regulations`(`regulation_id`, `regulation_name`, `compliant_status` ) VALUES ('573', 'General Data Protection Regulation', 'Non-Compliant');
+INSERT INTO `regulations`(`regulation_id`, `regulation_name`, `compliant_status` ) VALUES('425', 'International Organization for Standardization Standard 9001:2015', 'Compliant');
+INSERT INTO `regulations`(`regulation_id`, `regulation_name`, `compliant_status` ) VALUES('674', 'Health Insurance Portability and Accountability Act', 'Partially-Compliant ');
+INSERT INTO `regulations`(`regulation_id`, `regulation_name`, `compliant_status` ) VALUES('788', 'Health Warnings on Cigarette Packets', 'Complaint');
 
