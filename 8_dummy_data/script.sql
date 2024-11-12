@@ -12,3 +12,9 @@ INSERT INTO `storage`(`facility_name`, `productID`, `product_category`, `product
 INSERT INTO `storage`(`facility_name`, `productID`, `product_category`, `product_quantity`, `duration`, `facilityLocation`) VALUES ('ETA retail store','201','Nicotine Pouches','200','1','Nairobi');
 INSERT INTO `storage`(`facility_name`, `productID`, `product_category`, `product_quantity`, `duration`, `facilityLocation`) VALUES ('Obsidian Warehouse','201','Nicotine Pouches','550','4','Kisumu');
 INSERT INTO `storage`(`facility_name`, `productID`, `product_category`, `product_quantity`, `duration`, `facilityLocation`) VALUES ('ETA retail store','202','Vapour Product','400','3','Mombasa');
+
+-- Table traditional_tobacco_product insertion.
+INSERT INTO `traditional_tobacco_product`(`productID`, `tar_content`) VALUES ('101','10');
+INSERT INTO `traditional_tobacco_product`(`productID`, `tar_content`) VALUES ('102','12');
+INSERT INTO `traditional_tobacco_product`(`productID`, `tar_content`) VALUES ('201','6');
+INSERT INTO `traditional_tobacco_product`(`productID`, `tar_content`) VALUES ('202','6');
