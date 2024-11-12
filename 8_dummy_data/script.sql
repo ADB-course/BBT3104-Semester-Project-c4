@@ -32,3 +32,6 @@ INSERT INTO `regulations`(`regulation_id`, `regulation_name`, `compliant_status`
 INSERT INTO `regulations`(`regulation_id`, `regulation_name`, `compliant_status` ) VALUES('674', 'Health Insurance Portability and Accountability Act', 'Partially-Compliant ');
 INSERT INTO `regulations`(`regulation_id`, `regulation_name`, `compliant_status` ) VALUES('788', 'Health Warnings on Cigarette Packets', 'Complaint');
 
+-- Table smokeless_product insertion.
+INSERT INTO `smokeless_product`(`productID`, `nicotine_content`) VALUES ('201','6');
+INSERT INTO `smokeless_product`(`productID`, `nicotine_content`) VALUES ('202','6');
