@@ -19,3 +19,9 @@ INSERT INTO `orders`(`order_id`, `productID`, `order_date`, `order_status`) VALU
 INSERT INTO `orders`(`order_id`, `productID`, `order_date`, `order_status`) VALUES ('303','202','11-11-23','pending');
 INSERT INTO `orders`(`order_id`, `productID`, `order_date`, `order_status`) VALUES ('304','201','11-11-23','cancelled');
 INSERT INTO `orders`(`order_id`, `productID`, `order_date`, `order_status`) VALUES ('305','102','11-11-23','cancelled');
+
+-- Table traditional_tobacco_product insertion.
+INSERT INTO `traditional_tobacco_product`(`productID`, `tar_content`) VALUES ('101','10');
+INSERT INTO `traditional_tobacco_product`(`productID`, `tar_content`) VALUES ('102','12');
+INSERT INTO `traditional_tobacco_product`(`productID`, `tar_content`) VALUES ('201','6');
+INSERT INTO `traditional_tobacco_product`(`productID`, `tar_content`) VALUES ('202','6');
