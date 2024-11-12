@@ -73,3 +73,13 @@ CREATE TABLE payment(
     order_id INT NOT NULL,
     PRIMARY KEY(payment_code)
 );
+
+-- Creating a  junction table between orders and product table
+CREATE TABLE order_product(
+    order_id INT NOT NULL,
+    productID INT NOT NULL,
+    quantity INT NOT NULL,
+    PRIMARY KEY(order_id, productID),
+    FOREIGN KEY (order_id) REFERENCES orders(order_id),
+    FOREIGN KEY (productID) REFERENCES product(productID)
+);
