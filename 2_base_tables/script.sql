@@ -101,3 +101,16 @@ CREATE TABLE storage(
     PRIMARY KEY(facility_name, facilityLocation),
     FOREIGN KEY (productID) REFERENCES product(productID)
 );
+
+-- Dropping payment table
+DROP TABLE payment;
+
+-- Creating the payment table with the required attributes as the primary key
+CREATE TABLE payment(
+    payment_code VARCHAR(255) NOT NULL,
+    payment_date DATE NOT NULL,
+    payment_amount DECIMAL(10, 2) NOT NULL,
+    order_id INT NOT NULL,
+    PRIMARY KEY(payment_code)
+    FOREIGN KEY (order_id) REFERENCES orders(order_id)
+);
