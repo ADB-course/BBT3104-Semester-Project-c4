@@ -111,6 +111,6 @@ CREATE TABLE payment(
     payment_date DATE NOT NULL,
     payment_amount DECIMAL(10, 2) NOT NULL,
     order_id INT NOT NULL,
-    PRIMARY KEY(payment_code)
+    PRIMARY KEY(payment_code),
     FOREIGN KEY (order_id) REFERENCES orders(order_id)
 );
