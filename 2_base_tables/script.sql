@@ -83,3 +83,6 @@ CREATE TABLE order_product(
     FOREIGN KEY (order_id) REFERENCES orders(order_id),
     FOREIGN KEY (productID) REFERENCES product(productID)
 );
+
+-- Additional attribute to storage table
+ALTER TABLE storage ADD facilityLocation VARCHAR(255);
