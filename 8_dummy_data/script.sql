@@ -12,3 +12,10 @@ INSERT INTO `storage`(`facility_name`, `productID`, `product_category`, `product
 INSERT INTO `storage`(`facility_name`, `productID`, `product_category`, `product_quantity`, `duration`, `facilityLocation`) VALUES ('ETA retail store','201','Nicotine Pouches','200','1','Nairobi');
 INSERT INTO `storage`(`facility_name`, `productID`, `product_category`, `product_quantity`, `duration`, `facilityLocation`) VALUES ('Obsidian Warehouse','201','Nicotine Pouches','550','4','Kisumu');
 INSERT INTO `storage`(`facility_name`, `productID`, `product_category`, `product_quantity`, `duration`, `facilityLocation`) VALUES ('ETA retail store','202','Vapour Product','400','3','Mombasa')
+
+-- Table Order insertion.
+INSERT INTO `orders`(`order_id`, `productID`, `order_date`, `order_status`) VALUES ('300','202','10-11-23','complete');
+INSERT INTO `orders`(`order_id`, `productID`, `order_date`, `order_status`) VALUES ('301','101','10-11-23','complete');
+INSERT INTO `orders`(`order_id`, `productID`, `order_date`, `order_status`) VALUES ('303','202','11-11-23','pending');
+INSERT INTO `orders`(`order_id`, `productID`, `order_date`, `order_status`) VALUES ('304','201','11-11-23','cancelled');
+INSERT INTO `orders`(`order_id`, `productID`, `order_date`, `order_status`) VALUES ('305','102','11-11-23','cancelled')
