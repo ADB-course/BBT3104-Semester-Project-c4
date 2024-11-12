@@ -86,3 +86,18 @@ CREATE TABLE order_product(
 
 -- Additional attribute to storage table
 ALTER TABLE storage ADD facilityLocation VARCHAR(255);
+
+-- Dropping storage table
+DROP TABLE storage;
+
+-- Creating the storage table with the required attributes as  the primary key  
+CREATE TABLE storage(
+    facility_name VARCHAR(255) NOT NULL,
+    productID INT NOT NULL,
+    product_category VARCHAR(255) NOT NULL,
+    product_quantity INT NOT NULL,
+    duration INT NOT NULL,
+    facilityLocation VARCHAR(255) NOT NULL,
+    PRIMARY KEY(facility_name, facilityLocation),
+    FOREIGN KEY (productID) REFERENCES product(productID)
+);
