@@ -63,10 +63,9 @@ BEGIN
 END//
 
 DELIMITER ;
-
+--trigger for storage 
 DELIMITER //
 
---trigger for storage 
 CREATE TRIGGER TRG_BEFORE_UPDATE_ON_storage
 BEFORE UPDATE ON storage
 FOR EACH ROW
