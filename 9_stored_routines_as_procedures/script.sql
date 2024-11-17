@@ -46,3 +46,34 @@ BEGIN
     );
 END /
 /
+
+DELIMITER;
+
+-- testing the stored PROCEDURE
+CALL SP_INSERT_STORAGE(101, 'Warehouse', 10000 );
+
+-- Table orders insertion,
+
+DELIMITER /
+/
+
+CREATE PROCEDURE SP_INSERT_ORDERS(
+    IN P_ORDERID INT,
+    IN P_PRODUCTID INT,
+    IN P_ORDERDATE DATE,
+    IN P_ORDERSTATUS VARCHAR(255)
+)
+BEGIN
+    INSERT INTO ORDERS(
+        ORDERID,
+        PRODUCTID,
+        ORDERDATE,
+        ORDERSTATUS
+    ) VALUES (
+        P_ORDERID,
+        P_PRODUCTID,
+        P_ORDERDATE,
+        P_ORDERSTATUS
+    );
+END /
+/
