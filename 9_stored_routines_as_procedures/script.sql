@@ -54,7 +54,9 @@ CALL SP_INSERT_STORAGE(101, 'Warehouse', 10000 );
 
 -- Table orders insertion,
 
-DELIMITER /
+DELIMITER
+/
+
 /
 
 CREATE PROCEDURE SP_INSERT_ORDERS(
@@ -77,3 +79,9 @@ BEGIN
     );
 END /
 /
+
+DELIMITER;
+
+-- testing the stored PROCEDURE
+
+CALL SP_INSERT_ORDERS(101, 301, '2021-10-10', 'Pending' );
