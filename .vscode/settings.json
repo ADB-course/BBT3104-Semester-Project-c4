@@ -9,7 +9,7 @@
             "server": "localhost",
             "port": 3306,
             "driver": "MySQL",
-            "name": "Projevt database",
+            "name": "Project database",
             "group": "C4",
             "database": "british_american_tobacco",
             "username": "Patrickstar123"
