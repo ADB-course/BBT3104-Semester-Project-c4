@@ -55,6 +55,7 @@ CALL SP_INSERT_STORAGE(101, 'Warehouse', 10000 );
 -- Table orders insertion,
 
 DELIMITER
+
 /
 
 /
@@ -85,3 +86,8 @@ DELIMITER;
 -- testing the stored PROCEDURE
 
 CALL SP_INSERT_ORDERS(101, 301, '2021-10-10', 'Pending' );
+
+CREATE PROCEDURE UPDATEPRODUCTQUANTITY(
+    IN P_PRODUCTID INT,
+    IN P_QUANTITY INT
+)
