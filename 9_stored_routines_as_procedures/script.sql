@@ -1,5 +1,6 @@
 -- Write your SQL code here
 DELIMITER
+
 /
 
 /
@@ -25,4 +26,23 @@ BEGIN
         P_PRODUCTCATEGORY,
         P_PRODUCTQUANTITY
     );
-END;
+END // DELIMITER;
+ 
+
+-- testing the stored PROCEDURE
+CALL SP_INSERT_PRODUCT(301, 'Marlaboro', 250, 'Cigarette', 500 );
+ 
+-- Table Storage insertion.
+DELIMITER // CREATE PROCEDURE SP_INSERT_STORAGE( IN P_STORAGEID INT, IN P_STORAGELOCATION VARCHAR(255), IN P_STORAGECAPACITY INT );
+BEGIN
+    INSERT INTO STORAGE(
+        STORAGEID,
+        STORAGELOCATION,
+        STORAGECAPACITY
+    ) VALUES (
+        P_STORAGEID,
+        P_STORAGELOCATION,
+        P_STORAGECAPACITY
+    );
+END /
+/
