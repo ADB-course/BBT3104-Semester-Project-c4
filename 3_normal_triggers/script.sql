@@ -93,3 +93,6 @@ DELIMITER ;
 --all this triggers are present after running this query 
 SHOW TRIGGERS;
 --it shows the list of the triggers in the 6 tables requiring them 
+
+
+--
