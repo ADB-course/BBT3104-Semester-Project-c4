@@ -1,7 +1,10 @@
 -- Write your SQL code here
 
---trigger for product  table 
-DELIMITER //
+--trigger for product  table
+DELIMITER
+/
+
+/
 
 CREATE TRIGGER TRG_BEFORE_INSERT_ON_product
 BEFORE INSERT ON product
