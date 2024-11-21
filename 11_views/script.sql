@@ -90,3 +90,21 @@ WHERE
     p.company_name = 'British American Tobacco'
 GROUP BY 
     o.order_status;
+
+    CREATE VIEW bat_payments AS
+SELECT 
+    p.payment_code,
+    p.payment_date,
+    p.payment_amount,
+    o.order_id,
+    o.order_date,
+    o.order_status,
+    pr.product_name
+FROM 
+    payment p
+JOIN 
+    orders o ON p.order_id = o.order_id
+JOIN 
+    product pr ON o.productID = pr.productID
+WHERE 
+    pr.company_name = 'British American Tobacco';
