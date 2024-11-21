@@ -102,3 +102,41 @@ END // DELIMITER;
 
 -- testing the stored PROCEDURE
 CALL UPDATEPRODUCTQUANTITY(301, 100 );
+
+-- table product_regulation procedure
+DELIMITER $$  
+
+CREATE PROCEDURE updateCompliance(  
+    IN p_regulation_id INT,  
+    IN p_productID INT,  
+    IN p_last_checked_date DATE,  
+    IN p_compliance_status VARCHAR(20)  
+)  
+BEGIN  
+    -- Declare an error handler for any SQL exceptions  
+    DECLARE EXIT HANDLER FOR SQLEXCEPTION  
+    BEGIN  
+        -- Rollback in case of any error  
+        SELECT 'Error: An exception occurred.' AS error_message;  
+    END;  
+
+    -- Insert or update compliance information in product_regulation  
+    INSERT INTO product_regulation (productID, regulation_id, compliance_status, last_checked_date)  
+    VALUES (p_productID, p_regulation_id, p_compliance_status, p_last_checked_date)  
+    ON DUPLICATE KEY UPDATE  
+        compliance_status = VALUES(compliance_status),  
+        last_checked_date = VALUES(last_checked_date);  
+
+    -- If the compliance status is non-compliant  
+    IF p_compliance_status = 'non-compliant' THEN  
+        -- Notify compliance officer  
+        CALL notifyComplianceOfficer(p_productID);  
+    ELSE  
+        -- Update the product status to compliant  
+        UPDATE product_table  
+        SET status = 'compliant'  
+        WHERE productID = p_productID;  
+    END IF;  
+END$$  
+
+DELIMITER ;
