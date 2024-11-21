@@ -45,3 +45,48 @@ WHERE
     p.company_name = 'British American Tobacco'
 GROUP BY 
     r.regulation_name, r.description;
+
+
+
+    CREATE VIEW bat_orders AS
+SELECT 
+    o.order_id,
+    o.order_date,
+    o.order_status,
+    p.productID,
+    p.product_name
+FROM 
+    orders o
+JOIN 
+    product p ON o.productID = p.productID
+WHERE 
+    p.company_name = 'British American Tobacco';
+
+-- View to get order details and their status for British American Tobacco products
+CREATE VIEW bat_order_details AS
+SELECT 
+    o.order_id,
+    o.order_date,
+    o.order_status,
+    p.product_name,
+    p.productID
+FROM 
+    orders o
+JOIN 
+    product p ON o.productID = p.productID
+WHERE 
+    p.company_name = 'British American Tobacco';
+
+-- View to get total number of orders for British American Tobacco products, grouped by order status
+CREATE VIEW bat_order_status_summary AS
+SELECT 
+    o.order_status,
+    COUNT(o.order_id) AS total_orders
+FROM 
+    orders o
+JOIN 
+    product p ON o.productID = p.productID
+WHERE 
+    p.company_name = 'British American Tobacco'
+GROUP BY 
+    o.order_status;
